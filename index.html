@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Andrés Pinzón</h1>
+                <img class="img-fluid max-width:100% height:auto figure-img" src="img/foto_perfil.png" alt="Avatar">
+                <table class="border container">
+                    <thead>
+                        <tr>
+                            <th>Datos Personales</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="info"></tbody>
+                </table>
+            </div>
+            <div class="col">
+                <table class="table border container">
+                    <thead>
+                        <tr>
+                            <th class="blockquote">Cursos Actuales</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <form style="margin:10px;">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="search-box" placeholder="Filtrar por nombre">
+                                </div>
+                                <div class="col">
+                                    <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                                </div>
+                            </div>
+                            <div class="form-row">.</div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="search-box_inf" placeholder="Límite inferior">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="search-box_sup" placeholder="Límite superior">
+                                </div>
+                                <div class="col">
+                                    <button type="button" id="button-filterByCred" class="btn btn-success">Filtrar por créditos</button>
+                                </div>
+                            </div>
+                        </form>
+                    </thead>
+                    <thead class="thread-dark">
+                        <tr class="tooltip-inner">
+                            <th>Curso</th>
+                            <th>Profesor</th>
+                            <th>Créditos</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courses"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/course.js"></script>
+    <script type="module" src="./scripts/dataCourses.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
